@@ -10,6 +10,7 @@ import components.UserAccounts;
 public class BudgetTracker {
     private static final Scanner sc = new Scanner(System.in);
     private static final UserAccounts user = new UserAccounts();
+    private static final CheckingExpenses expenses = new CheckingExpenses();
 
     public static void main(String[] args) {
         int choice;
@@ -38,7 +39,15 @@ public class BudgetTracker {
                     break;
 
                 case 3:
-                    System.out.println("not done yet");
+                    System.out.println("\n----- Add Expense -----");
+                    System.out.print("Enter Expense Name: ");
+                    String name = sc.nextLine();
+                    System.out.print("Enter Expense Amount: ");
+                    double amt = sc.nextDouble();
+                    sc.nextLine();
+                    System.out.print("Enter Date (MM-DD-YYYY): ");
+                    String date = sc.nextLine();
+                    expenses.addExpense(name, amt, date);
                     break;
 
                 case 4:
@@ -50,7 +59,7 @@ public class BudgetTracker {
                     break;
 
                 case 6:
-                    System.out.println("not done yet");
+                    expenses.viewExpenses();
                     break;
 
                 case 7:
