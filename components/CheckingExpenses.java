@@ -2,46 +2,44 @@ package components;
 
 import java.util.ArrayList;
 
-public class CheckingExpenses {
+// INHERITANCE
+public class CheckingExpenses extends FinanceItem {
 
-    private class Expense {
-        String name;
-        double amount;
-        String date;
+    private ArrayList<String> expenses; // encapsulation
+    private CheckingBudget budget;
 
-        Expense(String name, double amount, String date) {
-            this.name = name;
-            this.amount = amount;
-            this.date = date;
-        }
+    public CheckingExpenses(CheckingBudget budget) {
+        super("Expenses", 0);
+        this.budget = budget;
+        this.expenses = new ArrayList<>();
     }
 
-    private ArrayList<Expense> expenses = new ArrayList<>();
-
-    //4 Add Expenses
     public void addExpense(String name, double amount, String date) {
-        expenses.add(new Expense(name, amount, date));
-        System.out.println("\nExpense added successfully!\n");
-    }
 
-    //7 View Expenses
-    public void viewExpenses() {
-        System.out.println("\n----- Expense History -----");
-
-        if (expenses.isEmpty()) {
-            System.out.println("No expenses recorded.\n");
+        if (!budget.deductBudget(amount)) {
+            System.out.println("Expense not added.");
             return;
         }
 
-        double total = 0;
-        int count = 1;
+        expenses.add(name + " - ₱" + amount + " (" + date + ")");
+        System.out.println("Expense added successfully!");
+    }
 
-        for (Expense e : expenses) {
-            System.out.println(count + ". " + e.name + " - " + e.amount + " - " + e.date);
-            total += e.amount;
-            count++;
+    // POLYMORPHISM
+    @Override
+    public void display() {
+        viewExpenses();
+    }
+
+    public void viewExpenses() {
+        if (expenses.isEmpty()) {
+            System.out.println("No expenses recorded.");
+            return;
         }
 
-        System.out.println("\nTotal Expenses: " + total + "\n");
+        System.out.println("\n--- Expenses ---");
+        for (String e : expenses) {
+            System.out.println(e);
+        }
     }
 }

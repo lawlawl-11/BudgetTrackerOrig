@@ -3,11 +3,8 @@ package components;
 import java.util.ArrayList;
 
 public class UserAccounts {
-    private ArrayList<Account> accounts;
 
-    public UserAccounts() {
-        accounts = new ArrayList<>();
-    }
+    private ArrayList<Account> accounts = new ArrayList<>();
 
     public void addAccount(Account acc) {
         accounts.add(acc);
@@ -22,17 +19,6 @@ public class UserAccounts {
         return false;
     }
 
-    public void showAllAccounts() {
-        System.out.println("=== Account List ===");
-        if (accounts.isEmpty()) {
-            System.out.println("No accounts found. Please add an account first.");
-        } else {
-            for (Account acc : accounts) {
-                System.out.println("- " + acc.getUsername());
-            }
-        }
-    }
-
     public Account getAccount(String username) {
         for (Account acc : accounts) {
             if (acc.getUsername().equals(username)) {
@@ -40,5 +26,17 @@ public class UserAccounts {
             }
         }
         return null;
+    }
+
+    public void showAllAccounts() {
+        if (accounts.isEmpty()) {
+            System.out.println("No accounts found.");
+            return;
+        }
+
+        System.out.println("\n--- Accounts ---");
+        for (Account acc : accounts) {
+            System.out.println(acc.getUsername());
+        }
     }
 }
