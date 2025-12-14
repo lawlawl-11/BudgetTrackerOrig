@@ -120,4 +120,11 @@ The program uses try-catch blocks to handle invalid inputs such as non-numeric v
    A. Future Enhancements- For further improvement of this console. we would like to add GUI to make the 
    console more fun to use and more pleasing with the eye. Also improves some of the other features for
    better improvements.
+   B. References: 
+   https://codewithcurious.com/projects/budget-tracker-using-java/
+   https://www.includehelp.com/java-programs/banking-management-system.aspx
+   https://www.geeksforgeeks.org/java/mini-banking-application-in-java/
+  
+   
+                  
  
