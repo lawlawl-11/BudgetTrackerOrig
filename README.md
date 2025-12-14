@@ -9,7 +9,7 @@ Programming (OOP) principles such as encapsulation, abstraction, inheritance, an
 modularity, maintainability, and scalability. This program helps solve the problem of unorganized expense
 tracking by providing a structured and secure system for managing budgets and expenses.
 
-****3. OOP Concepts applied****
+****OOP Concepts applied****
 ---
 **a. Encapsulation**
 
@@ -37,7 +37,7 @@ different implementations of display behavior while using a common method name.
 
 The program uses try-catch blocks to handle invalid inputs such as non-numeric values when entering budgets or expenses, preventing the program from crashing.
 
-****4. Program Structure****
+****Program Structure****
 ---   
 ****Main Class****
 
@@ -78,7 +78,7 @@ The program uses try-catch blocks to handle invalid inputs such as non-numeric v
     -Responsible for managing the user’s total budget.
     -Stores the budget value internally and prevents direct modification from other classes.
 
-****5. How to Run the Program****
+****How to Run the Program****
 ---
 **-Requirements**
   
@@ -93,7 +93,7 @@ The program uses try-catch blocks to handle invalid inputs such as non-numeric v
     -2. Compile the program
     -3. Run the program
 
-****6. Sample Output****
+****Sample Output****
 ---
   ****=== BUDGET TRACKER SYSTEM ===****
 
@@ -106,7 +106,7 @@ The program uses try-catch blocks to handle invalid inputs such as non-numeric v
     [7] View All Accounts
     [0] Exit
 
-****7. Authors****
+****Authors****
 ---
    **• Esta, Jake Daniel S.**
    
@@ -114,7 +114,7 @@ The program uses try-catch blocks to handle invalid inputs such as non-numeric v
    
    **• Tibayan, Lawrence C.**
 
-****8. Other Sections you may include:****
+****Other Sections you may include:****
 ---
 
    A. Future Enhancements- For further improvement of this console. we would like to add GUI to make the 
