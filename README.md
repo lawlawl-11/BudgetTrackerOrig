@@ -88,7 +88,7 @@ Steps to Run
 
 7. Author:
 
-   Esta, Jake Daniel
+   Esta, Jake Daniel S.
    Tan, Gabriel Mark G.
    Tibayan, Lawrence C.
 
