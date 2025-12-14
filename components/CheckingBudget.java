@@ -2,7 +2,7 @@ package components;
 
 public class CheckingBudget {
 
-    private double totalBudget; // encapsulation
+    private double totalBudget; 
 
     public CheckingBudget() {
         this.totalBudget = 0;
