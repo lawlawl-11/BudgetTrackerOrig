@@ -31,7 +31,7 @@ public class BudgetTracker {
             System.out.println("[0] Exit");
             System.out.print("Enter choice: ");
 
-            try { // EXCEPTION HANDLING
+            try {
                 choice = sc.nextInt();
                 sc.nextLine();
             } catch (Exception e) {
@@ -46,7 +46,7 @@ public class BudgetTracker {
                 case 3 -> addExpenses();
                 case 4 -> addBudget();
                 case 5 -> budget.viewBudget();
-                case 6 -> expenses.display(); // polymorphism used
+                case 6 -> expenses.display();
                 case 7 -> user.showAllAccounts();
                 case 0 -> System.out.println("Exiting system... Goodbye!");
                 default -> System.out.println("Invalid choice.");
