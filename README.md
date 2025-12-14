@@ -104,7 +104,42 @@ The program uses try-catch blocks to handle invalid inputs such as non-numeric v
     [5] View Budget
     [6] View Expenses
     [7] View All Accounts
-    [0] Exit
+    [0] Exit  
+
+    Enter choice: 1
+    Enter username: Jake
+    Enter password: JakePogi123
+    Account created successfully!
+
+    Enter choice: 2
+    Enter username: Jake
+    Enter password: JakePogi123
+    Login successful!
+
+    Enter choice: 3
+    Enter Expense Name: Vandal Skin
+    Enter Expense Amount: 555
+    Enter Date (MM-DD-YYYY): 12-14-2025
+    Expense added successfully!
+
+    Enter choice: 4
+    Enter amount to add to budget: 1000
+    Budget added successfully!
+
+    Enter choice: 5
+    Remaining Budget: ?1000.0
+
+    Enter choice: 6
+    --- Expenses ---
+    Vandal Skin - ?555.0 (12-14-2025)
+
+    Enter choice: 7
+    --- Accounts ---
+    Jake
+
+    Enter choice: 0
+    Exiting system... Goodbye!
+
 
 ****Authors****
 ---
